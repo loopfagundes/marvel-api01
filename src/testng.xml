@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "All Test Suite">
+    <test name = "Characters Test">
+        <parameter name="apiKey" value="66d0c804b001482adf657292b89d40f3"/>
+        <parameter name="privateApiKey" value="fbd395fc6146e4248406ccccab35a28a1db00ae1"/>
+        <parameter name="baseUrl" value="https://gateway.marvel.com/v1/public"/>
+        <parameter name="characterEP" value="characters"/>
+        <classes>
+            <class name = "testcases.GETCharactersTestCase">
+                <methods>
+                    <include name = "getCharactersWithSuccess"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
