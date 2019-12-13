@@ -22,8 +22,8 @@ public class GETCharactersTestCase {
         String hash = getHash(md5Str);
 
                 given().
-                        baseUri("https://gateway.marvel.com/v1/public").
-                        basePath("characters").
+                        baseUri(baseUrl).
+                        basePath(characterEP).
                         param("ts", timesTampStr).
                         param("apiKey",apiKey).
                         param("hash",hash).

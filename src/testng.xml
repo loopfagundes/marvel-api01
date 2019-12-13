@@ -1,17 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name = "All Test Suite">
-    <test name = "Characters Test">
-        <parameter name="apiKey" value="66d0c804b001482adf657292b89d40f3"/>
-        <parameter name="privateApiKey" value="fbd395fc6146e4248406ccccab35a28a1db00ae1"/>
-        <parameter name="baseUrl" value="https://gateway.marvel.com/v1/public"/>
-        <parameter name="characterEP" value="characters"/>
+<suite name="All Test Suite">
+    <parameter name="baseUrl" value="https://gateway.marvel.com/v1/public"/>
+    <parameter name="characterEP" value="characters"/>
+<!--    <parameter name="ts" value="1"/>-->
+    <parameter name="apiKey" value="66d0c804b001482adf657292b89d40f3"/>
+    <parameter name="apiKeyPrivate" value="fbd395fc6146e4248406ccccab35a28a1db00ae1"/>
+<!--    <parameter name="hash" value="1f06f680acdeb3e0f0b76d80ef7cddaf"/>-->
+    <test name="GET with success">
         <classes>
-            <class name = "testcases.GETCharactersTestCase">
+            <class name="testcases.GETCharactersTestCase02">
                 <methods>
-                    <include name = "getCharactersWithSuccess"/>
+                    <include name="getCharacterSuccess"/>
+                    <exclude name="getCharacterSuccessRestAssured"/>
                 </methods>
             </class>
         </classes>
     </test>
 </suite>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<suite name = "All Test Suite">-->
+<!--    <test name = "Characters Test">-->
+<!--        <parameter name="apiKey" value="66d0c804b001482adf657292b89d40f3"/>-->
+<!--        <parameter name="privateApiKey" value="fbd395fc6146e4248406ccccab35a28a1db00ae1"/>-->
+<!--        <parameter name="baseUrl" value="https://gateway.marvel.com/v1/public"/>-->
+<!--        <parameter name="characterEP" value="characters"/>-->
+<!--        <classes>-->
+<!--            <class name = "testcases.GETCharactersTestCase">-->
+<!--                <methods>-->
+<!--                    <include name = "getCharactersWithSuccess"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->

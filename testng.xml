@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="/Users/lucianofagundes/working/marvel-api01/src/test/java/testcases/GETCharactersTestCase02.java"><classes><class name="testcases.GETCharactersTestCase02"><methods><include name="getCharacterSuccess"/><include name="getCharacterSuccessRestAssured"/></methods></class></classes></test></suite>
